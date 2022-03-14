@@ -4,18 +4,20 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <header>
-        <nav>
-          <Link to="/">Start</Link>
-          <Link to="/about">About</Link>
-        </nav>
-      </header>
       <main>
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/" element={<Start />} />
         </Routes>
       </main>
+
+      <footer>
+        <nav>
+          <Link to="/">Start</Link>
+          <Link to="/events">Events</Link>
+          <Link to="/receipt">Receipt</Link>
+        </nav>
+      </footer>
     </Router>
   );
 }
