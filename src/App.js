@@ -8,6 +8,7 @@ function App() {
         <Routes>
           <Route path="/events" element={<Events />} />
           <Route path="/" element={<Start />} />
+          <Route path="/receipt" element={<Receipt />} />
         </Routes>
       </main>
 
